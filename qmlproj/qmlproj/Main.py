@@ -14,7 +14,7 @@ backend = Backend(db)
 
 engine.rootContext().setContextProperty("backend", backend) # expose the backedn class to the ui
 
-engine.load("Main.qml") # load the ui engine
+engine.load("qmlproj/qmlproj/Main.qml") # load the ui engine
 
 if not engine.rootObjects(): # if no pages close the app
     sys.exit(-1)
